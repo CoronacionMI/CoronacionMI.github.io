@@ -10,7 +10,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("#meow");
+                this.audio = document.querySelector("#meowo");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -64,7 +64,7 @@
     <a-scene renderer="colorManagement: true">
        <a-assets>
         <a-asset-item id="pusa" response-type="arraybuffer" src="./pusa.glb"></a-asset-item>
-        <audio id="meow" src="./assets/meow.mp3"></audio>
+        <audio id="meowo" src="./assets/meowo.wav"></audio>
       </a-assets>
       <a-entity event-listener id="pusa-model"  
         gltf-model="#pusa" 
@@ -73,7 +73,7 @@
         rotation="5 5 5" 
       >
       </a-entity>
-      <a-sound src="#meow" autoplay="false"></a-sound>
+      <a-sound src="#meowo" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-scene>
